@@ -43,7 +43,7 @@ function blanks(wordToBlank) {
 
 }
 
-
+// Change a blank into the appropriate letter.
 function alterAt(index, char, str) {
     return str.substr(0, index) + char + str.substr(index + 1);
 }
