@@ -16,7 +16,7 @@ body {
 h1,
 h2 {
     position: fixed;
-    bottom: 40px;
+    bottom: 20px;
     margin: 0px auto;
     left: 70%;
     transform: translate(-70%, 0) rotate(-7deg);
@@ -25,17 +25,19 @@ h2 {
     color: #f26321;
     -webkit-text-fill-color: #f26321;
     -webkit-text-stroke-color: #644b77;
+    opacity: 0.6;
 }
 
 h2 {
-    font-size: 20vw;
-    bottom: 85px;
+    font-size: 22vw;
+    bottom: 1vh;
     font-family: 'Creepster', cursive;
     left: 50%;
     transform: translate(-50%, 0) rotate(0deg);
     color: white;
     -webkit-text-stroke-width: 5px;
     -webkit-text-fill-color: white;
+    opacity: 1;
 }
 
 #top {
@@ -51,8 +53,10 @@ h2 {
 
 #shown,
 #lettersGuessed,
-#guesses {
-    font-size: 1.45em;
+#guesses,
+#wins {
+    font-size: 1.25em;
+    line-height: 1.5em;
 }
 
 #lettersGuessed {
@@ -65,14 +69,14 @@ div#game {
     position: relative;
     right: 80px;
     height: 400px;
-    margin: 20px auto;
-    width: 200px;
+    margin: 30px auto;
+    width: 220px;
 }
 
 img#header {
     height: 200px;
     width: auto;
     position: absolute;
-    top: 75px;
-    left: 190px;
+    top: 70px;
+    left: 230px;
 }
