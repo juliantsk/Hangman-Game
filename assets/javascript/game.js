@@ -6,6 +6,8 @@ var lettersGuessed = [];
 var answerWord = "";
 var shown = "";
 var alphabet = "abcdefghijklmnopqrstuvwxyz";
+var imageList = ["assets/images/ghost.png", "assets/images/moon.png", "assets/images/pumpkin.png", "assets/images/spiderweb.png"];
+var lastImage = "";
 
 // Choose a random word from word array.
 function randomWord() {
@@ -20,7 +22,13 @@ function chooseWord() {
     return result;
 }
 
-
+// Place an image randomly from list.
+function randomImg() {
+    var img = document.getElementById("header");
+    img.src = imageList[Math.floor(Math.random() * imageList.length)];
+    img.alt = img.src.slice(img.src.indexOf("images/"), img.src.indexOf("."));
+}
+randomImg();
 
 // Convert a word into blanks.
 function blanks(wordToBlank) {
