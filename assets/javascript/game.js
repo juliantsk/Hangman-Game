@@ -11,8 +11,6 @@ var lastImage = "";
 
 
 
-document.addEventListener("click", mobileReady);
-
 // Choose a random word from word array.
 function randomWord() {
     return words[Math.floor(Math.random() * words.length)];
