@@ -65,21 +65,19 @@ document.getElementById("shown").textContent = shown;
 document.onkeypress = function(event) {
     var userGuess = event.key.toLowerCase();
     // Checking if letter has already been guessed.
-    if (guesses <= 0) {
-        alert("Out of guesses! The correct answer was " + answerWord.toUpperCase() + ".");
-        usedWords.push(answerWord);
-        initiate();
-    } else if (usedWords.length >= 20) {
+    if (usedWords.length >= 20) {
         alert("You guessed all of the words! Reload the page to Play again.")
         return;
+        // Checking for non-alphabet characters.
     } else if (!(alphabet.indexOf(userGuess) > -1)) {
         alert("Please type a letter.");
         return;
     } else {
+        // Checking if letter has already been guessed.
         for (var i = 0; lettersGuessed[i]; i++) {
-            // Alert to guess a different letter, if already guesseds
             console.log("i:" + i);
             if (userGuess === lettersGuessed[i]) {
+                // Alert to guess a different letter, if already guessed.
                 alert("Already guessed " + userGuess + ".");
                 return;
             }
@@ -105,6 +103,11 @@ document.onkeypress = function(event) {
         wins++;
     } else {
         guesses--;
+    }
+    if (guesses <= 0) {
+        alert("Out of guesses! The correct answer was " + answerWord.toUpperCase() + ".");
+        usedWords.push(answerWord);
+        initiate();
     }
 
     document.getElementById("shown").textContent = shown;
