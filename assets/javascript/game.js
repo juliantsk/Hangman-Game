@@ -69,7 +69,6 @@ document.onkeypress = function(event) {
         alert("Out of guesses! The correct answer was " + answerWord.toUpperCase() + ".");
         usedWords.push(answerWord);
         initiate();
-        return;
     } else if (usedWords.length >= 20) {
         alert("You guessed all of the words! Reload the page to Play again.")
         return;
