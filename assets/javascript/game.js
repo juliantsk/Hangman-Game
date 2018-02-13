@@ -104,6 +104,7 @@ document.onkeypress = function(event) {
     } else {
         guesses--;
     }
+    //Checking if there are any guesses left.
     if (guesses <= 0) {
         alert("Out of guesses! The correct answer was " + answerWord.toUpperCase() + ".");
         usedWords.push(answerWord);
