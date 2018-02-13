@@ -67,7 +67,7 @@ div#game {
     font-family: 'Creepster', cursive;
     text-align: center;
     position: relative;
-    right: 80px;
+    right: 18vw;
     height: 400px;
     margin: 30px auto;
     width: 220px;
@@ -78,5 +78,5 @@ img#header {
     width: auto;
     position: absolute;
     top: 70px;
-    left: 230px;
+    left: 42vw;
 }
