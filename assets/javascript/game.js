@@ -49,6 +49,7 @@ function alterAt(index, char, str) {
 // Initiating first word to guess.
 function initiate() {
     answerWord = chooseWord();
+    randomImg();
     shown = blanks(answerWord);
     guesses = 15;
     lettersGuessed = [];

@@ -1,7 +1,78 @@
 body {
     margin: 0px auto;
+    background-color: black;
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: center top;
+    width: 100%;
+    font-size: 2em;
+    color: black;
+    -webkit-text-fill-color: #a78eb8;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #644b77;
 }
 
-div {
-    background-image: "assets/images/background.png";
+h1,
+h2 {
+    position: fixed;
+    bottom: 40px;
+    margin: 0px auto;
+    left: 70%;
+    transform: translate(-70%, 0) rotate(-7deg);
+    font-family: 'Butcherman', cursive;
+    font-size: 3em;
+    color: #f26321;
+    -webkit-text-fill-color: #f26321;
+    -webkit-text-stroke-color: #644b77;
+}
+
+h2 {
+    font-size: 20vw;
+    bottom: 85px;
+    font-family: 'Creepster', cursive;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(0deg);
+    color: white;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-fill-color: white;
+}
+
+#top {
+    position: fixed;
+    width: 250px;
+    right: 5%;
+}
+
+.titles {
+    -webkit-text-fill-color: white;
+    font-family: 'Condiment', cursive;
+}
+
+#shown,
+#lettersGuessed,
+#guesses {
+    font-size: 1.45em;
+}
+
+#lettersGuessed {
+    -webkit-text-stroke-color: white;
+}
+
+div#game {
+    font-family: 'Creepster', cursive;
+    text-align: center;
+    position: relative;
+    right: 80px;
+    height: 400px;
+    margin: 20px auto;
+    width: 200px;
+}
+
+img#header {
+    height: 200px;
+    width: auto;
+    position: absolute;
+    top: 75px;
+    left: 190px;
 }
