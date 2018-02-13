@@ -9,18 +9,18 @@
 </head>
 
 <body>
-    <script type="text/javascript" src="assets/javascript/game.js">
-    </script>
     <h1>Hangman</h1>
     <div id="game">
         <p>Press any key to get started!</p>
-        <p>Wins: <span class="wins">0</span></p>
+        <p>Wins: <span id="wins">0</span></p>
         <p>Current Word</p>
-        <p class="shown">_ _ _ _ _ _ _</p>
-        <p>Number of guesses remaining: <span class="guesses"></span></p>
+        <p id="shown">x x x x x x x</p>
+        <p>Number of guesses remaining: <span id="guesses">15</span></p>
         <p>Letters already guessed: </p>
-        <p>[<span class="lettersGuessed"></span>]</p>
+        <p>[ <span id="lettersGuessed"></span> ]</p>
     </div>
+    <script type="text/javascript" src="assets/javascript/game.js">
+    </script>
 </body>
 
 </html>
