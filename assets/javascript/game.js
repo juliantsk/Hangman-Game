@@ -64,7 +64,8 @@ document.onkeypress = function(event) {
     var userGuess = event.key.toLowerCase();
     // Checking if letter has already been guessed.
     if (guesses <= 0) {
-        alert("Out of guesses! The correct answer was " + answerWord + " Reload the page to play again.")
+        alert("Out of guesses! The correct answer was " + answerWord.toUpperCase() + ".");
+        initiate();
         return;
     } else if (usedWords.length >= 20) {
         alert("You guessed all of the words! Reload the page to Play again.")
@@ -95,7 +96,7 @@ document.onkeypress = function(event) {
     }
     // Checking if successfully guessed word.
     if (shown === answerWord) {
-        alert("You correctly guessed: " + answerWord + ".");
+        alert("You correctly guessed: " + answerWord.toUpperCase() + ".");
         usedWords.push(answerWord);
         initiate();
         console.log(usedWords);
