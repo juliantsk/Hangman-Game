@@ -16,12 +16,12 @@ body {
 h1,
 h2 {
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     margin: 0px auto;
     left: 70%;
     transform: translate(-70%, 0) rotate(-7deg);
     font-family: 'Butcherman', cursive;
-    font-size: 3em;
+    font-size: 10vw;
     color: #f26321;
     -webkit-text-fill-color: #f26321;
     -webkit-text-stroke-color: #644b77;
@@ -29,8 +29,8 @@ h2 {
 }
 
 h2 {
-    font-size: 22vw;
-    bottom: 1vh;
+    font-size: 25vw;
+    bottom: 2vh;
     font-family: 'Creepster', cursive;
     left: 50%;
     transform: translate(-50%, 0) rotate(0deg);
@@ -44,6 +44,7 @@ h2 {
     position: fixed;
     width: 250px;
     right: 5%;
+    top: 10px;
 }
 
 .titles {
@@ -74,9 +75,11 @@ div#game {
 }
 
 img#header {
-    height: 200px;
+    height: 25vw;
     width: auto;
     position: absolute;
-    top: 70px;
-    left: 42vw;
+    top: 15vw;
+    left: 46vw;
+    z-index: -1;
+    overflow: hidden;
 }
